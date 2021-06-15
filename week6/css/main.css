@@ -1,0 +1,157 @@
+body{
+    font-family: Arial Arial, Helvetica, sans-serif;
+    color: darkslategray;
+}
+
+/*
+ This is a css comment 
+ shortcut for adding the comment is control + / or commend + /
+ */
+
+ h1 {
+     color: peru;
+ }
+ p{
+     background-color: lightblue;
+ }
+
+ /* Setecting multiple elements */
+ h1,
+ h2,
+ h3,
+ h4, {
+ text-decoration: underline;
+ }
+ /* Selecting child elements */
+ nav ul a{
+     list-style: none;
+ }
+ /* selecting child elements multiple level */
+ nav ul a{
+     color: darkslategray;
+     text-decoration: none;
+ }
+
+ /* selecting element with id value */
+ #treatofweek {
+     background-color: orange
+ }
+
+ /* selecting HTML elements with class name */
+ .orange-link{
+     background-color: darkslategray;
+     color: orange;
+     text-decoration: none;
+ }
+
+ .large-text {
+     font-size: 20px;
+ }
+ 
+ /* Direct child selector */
+ h3+ul{
+     border: 1px solid black;
+ }
+ /* Sibling selector */
+ h3+p {
+     text-transform: uppercase;
+ }
+
+ /* Attibute sectoe */
+ [href*="treatofweek"] {
+     font-weight: bold;
+ }
+
+ img[src$=".jpg"] {
+     border:
+ }
+ /* Using pseudo classes
+ Styling navigation
+ */
+
+ nav ul a,
+ nav ul a:link,
+ nav ul a:visited {
+   background-color: orange;
+   /* horizontal vertical blur spread color */
+   box-shadow: -2px 2px 4px black;
+ }
+
+ nav ul a:hover,
+ nav ul a:focus {
+     text-shadow: underline;
+ }
+
+ nav ul 
+ nav ul a:hover,
+ nav ul a:focus {
+     text-decoration: underline;
+ }
+
+ nav ul a:active {
+     box-shadow: 0 0 4px 2px black;
+ }
+
+/* Position related selectors */
+/* first-child and :last-child */
+aside ul li:first-child {
+    font-weight: bold;
+}
+
+section ol li:last-child {
+    font-weight: bold;
+}
+
+/* Styling a table */
+table {
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(even){
+    /* hex color value with 6 charaters */
+    background-color: #d5836c;
+}
+
+/* 
+Using the nth-child with n.
+Where n is 0,1,2,3.... until number of elements
+*/
+table th:nth-child(n),
+table td:nth-child(n) {
+    /* hex color value with 3 charaters */
+    border: 1px solid black;
+}
+
+/* using a formula in :nth-child selector */
+table td:nth-child(2n+1) {
+    background-color: rgba (0, 0, 0, .2);
+}
+
+/* CSS Specificity
+   Formula: inline-styles id class tag-name
+*/
+
+/* 0001 */
+footer {
+    background-color: aqua;
+}
+
+body footer {
+    background-color: orange
+}
+
+/* 0001 */
+footer {
+    background-color: red;
+}
+
+/*
+using inline styles = 1000
+        vs
+using two tags = 0002
+*/
+article h2 {
+    text-transform: lowercase;
+}
+
+/* 0010 */
