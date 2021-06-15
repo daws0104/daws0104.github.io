@@ -1,6 +1,8 @@
 body{
     font-family: Arial Arial, Helvetica, sans-serif;
     color: darkslategray;
+    /* Adding background image */
+    background-image: url(../images/white_brick_wall.png);
 }
 
 /*
@@ -34,7 +36,8 @@ body{
 
  /* selecting element with id value */
  #treatofweek {
-     background-color: orange
+     /*color image repeat position-x position-y*/
+    background-color: orange url(../images/bread.jpg)
  }
 
  /* selecting HTML elements with class name */
@@ -46,6 +49,15 @@ body{
 
  .large-text {
      font-size: 20px;
+ }
+
+ article>p {
+     font-size: 24px;
+     font-weight: bold;
+     line-height: 1.5;
+     text-transform: lowercase;
+     text-align: center;
+     text-
  }
  
  /* Direct child selector */
