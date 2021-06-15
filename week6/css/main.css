@@ -37,7 +37,13 @@ body{
  /* selecting element with id value */
  #treatofweek {
      /*color image repeat position-x position-y*/
-    background-color: orange url(../images/bread.jpg)
+    background-color: orange url(../images/bread.jpg) no-repeat center center;
+    background-size: cover
+
+    color: white
+
+    font-size: 1.25rem;
+    padding: 1em
  }
 
  /* selecting HTML elements with class name */
@@ -51,13 +57,24 @@ body{
      font-size: 20px;
  }
 
+html {
+    font-size: large;
+}
+
  article>p {
      font-size: 24px;
      font-weight: bold;
      line-height: 1.5;
      text-transform: lowercase;
      text-align: center;
-     text-
+     /* 1em = 24px */
+     /*
+     html = 20px
+     1rem = 20px
+     font-size: .rem; =10px
+     1em = 10px;
+     0.5em = 5px;
+     */
  }
  
  /* Direct child selector */
