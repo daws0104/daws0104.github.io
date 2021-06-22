@@ -1,3 +1,4 @@
+/*!!!! add positon abosolue*/
 header{
     text-align: center;
     background-image: url(https://wallpaper.dog/large/5478970.jpg);
@@ -9,12 +10,27 @@ header{
 
 /*added sytle to image to make it small*/
 img[src$="yourus.jpg"] {
-    inline-size: 300px;
+    inline-size: 20%;
 }
 
 
 body{
-    background-color: #98cac9;
+    background-color: #aad4cf;
     font-family:  Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.container{
+    align-content: center;
+    max-width: 1200px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #d4e9e7;
+    
+
+}
+
+nav li{
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+  }
