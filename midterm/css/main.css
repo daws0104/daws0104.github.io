@@ -326,7 +326,8 @@ button {
 footer {
     max-width: 1200px;
     padding-right: 2.5%;
-    padding-bottom: 3%;
+    padding-bottom: 2.5%;
     padding-top: 3%;
-    text-align: right
+    text-align: right;
+    margin-bottom: 2%;
 }
