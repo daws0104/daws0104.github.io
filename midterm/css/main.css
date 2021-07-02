@@ -3,78 +3,177 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 /*End of CSS reset*/
 
-
-
-
-/*!!!! add positon abosolue*/
-/*header{
-    text-align: center;
-    /*background-image: url(https://wallpaper.dog/large/5478970.jpg); width: 100%;*/
-    padding-top: 150px;
-    padding-bottom: 50px;
-    box-shadow: 0px 0px 4px 0px black;
-    color: white;
+/*clearfix*/
+.group:after {
+    content: "yourus.jpg";
+    display: ta le;
+    clear: both;
 }
-*/
 
+header {
+    background-color: #d4e9e7;
+    max-width: 1200px;
+}
 
-.banner{
+/*to place text on image */
+.banner {
     position: relative;
 }
-h1{
-    position:absolute;
-    text-align:center;
+
+/*styleing for title Yourus aranath*/
+h1 {
+    text-align: center;
+    position: absolute;
+    top: 40%;
     color: white;
-}
-img[src$="ocean.jpg"]{
-    width: 100%;
+    font-size: x-large;
+    font-weight: bold;
+    right: 40%;
 }
 
+/*banner image*/
+img[src$="ocean.jpg"] {
+    width: 100%;
+    margin-bottom: .5%;
+    background-color: black;
+    padding-left: 1px;
+
+}
+
+/*floating paragraph image*/
 /*added sytle to image to make it small*/
 /*added padding-to seprate form paragraph*/
 img[src$="yourus.jpg"] {
@@ -82,18 +181,17 @@ img[src$="yourus.jpg"] {
     padding-right: .7em;
     padding-bottom: .7em;
 }
+
 /*the subheading Home,story and contact stypeing*/
-nav{
+nav {
     text-align: center;
     text-decoration: solid;
-    font-size:large
+    font-size: large
 }
 
-.line{
-    border-left: 1px black;
-}
-
-h2,h3{
+/*styleing for titles Yourus's story and starry the starfish*/
+h2,
+h3 {
     font-size: 24px;
     font-weight: bold;
     line-height: 1.5;
@@ -101,56 +199,94 @@ h2,h3{
     padding-bottom: .3em;
 }
 
-body{
+/*added fonts and body colour*/
+body {
     background-color: #aad4cf;
-    font-family:  Arial, Helvetica, sans-serif, 'Trebuchet MS', sans-serif;
+    font-family: Arial, Helvetica, sans-serif, 'Trebuchet MS', sans-serif;
 }
 
-.container{
-    align-content: center;
+/*styleing for main content*/
+main {
     max-width: 1200px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+/*div for body tag*/
+.container {
+    max-width: 58%;
     margin-left: 20%;
     margin-right: 20%;
-    padding-left: 0.5%;
-    padding-right: 0.5%;
     background-color: #d4e9e7;
-    /*content: inherit;*/
 }
 
-
-nav li{
+/*styleing form nav li*/
+nav li {
     display: inline-block;
     text-align: center;
-    width: 250px;
+    width: 32%;
     padding-top: .5em;
     padding-bottom: .5em;
     font-weight: bold;
     font-size: larger;
-  }
+    color: black;
+}
 
-/*form div input {
-    display: block
-}*/
+/*added to archors to remove link style*/
+a {
+    color: black;
+    text-decoration: none;
 
-.block{
+}
+
+/*added to story a tag add borders*/
+.story {
+    border-right: 1px black;
+    border-left: 1px black;
+    border-style: solid;
+
+}
+
+/*for form inputs*/
+.block {
+    border: 1px lightgray solid;
     width: 99%;
     max-width: 1200px;
     display: block
 }
 
-form{
-    border: 1px solid black; padding-top: 2%; padding-bottom: 2%;
+/*styleing for form*/
+form {
+    border: 1px solid black;
+    padding-top: 2%;
+    padding-bottom: 2%;
     padding-left: 0.9%;
     padding-right: 0.9%;
 }
 
-img{
+form input {
+    margin-top: 1em;
+}
+
+/*styleing for textarea*/
+#message {
+    display: block;
+    max-width: 1200px;
+    margin-top: 1em;
+    min-width: 99%;
+    min-height: 7em;
+    max-height: 7em;
+}
+
+
+/*styleing for yourus image*/
+img {
     width: 200px;
     float: left;
-  }
+}
 
 /*for removeing list indent*/
-aside ul{
+aside ul {
     list-style-position: inside;
     padding-left: 0;
     list-style-type: inherit;
@@ -159,38 +295,37 @@ aside ul{
 }
 
 /*span element added to remove extra space between bullents and list*/
-ul span{
+ul span {
     position: relative;
     left: -10px;
     list-style-position: inside;
     padding-left: 0;
 }
 
-form div{
+/*styleing for list*/
+form div {
     padding: .5em;
-    box
-}
-/*not currently working*/
-label{
-    padding-bottom: 15em;
 }
 
-form h4{
+/*sytleing for would you like to know more?*/
+form h4 {
     font-size: large;
     padding-bottom: 1.5em;
 }
 
-button{
+/*styleing send button*/
+button {
     padding: .7em;
     margin-top: .5em;
     margin-left: .5em;
     background-color: inherit;
-    display:inline-block
+    display: inline-block
 }
 
 
-footer{
-    padding-right: 3%;
+footer {
+    max-width: 1200px;
+    padding-right: 2.5%;
     padding-bottom: 3%;
     padding-top: 3%;
     text-align: right
