@@ -194,6 +194,12 @@ table {
     border-collapse: collapse;
 }
 
+
+section ul{
+    list-style: none;
+}
+
+
 tbody tr:nth-child(even){
     /* hex color value with 6 charaters */
     background-color: #d5836c;
