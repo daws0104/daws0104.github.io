@@ -1,0 +1,222 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*End of CSS reset*/
+
+/*--------------
+    all contain styles
+----------------*/
+
+/*container for all page content*/
+
+
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*----------------
+   header styles
+-----------------*/
+
+header{
+    background-color:#222;
+}
+
+/*header div*/
+.site{
+    padding-left: 1rem;
+}
+
+.logo{
+    align-self: start;
+}
+
+/*added to archors to remove link style*/
+a {
+    color: #c78c06;
+    text-decoration: none;
+}
+
+/*for styleing whole navagatshion list*/
+nav ul {
+    text-align: center;
+    color: #c78c06;
+}
+
+nav ul a:hover,
+nav ul a:focus {
+    background-color: #c78c06;
+    color:#222;
+}
+
+/*for styleing indiveal list items*/
+nav li{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+/*hids the seach label*/
+nav li label{
+    display:none;
+}
+
+/*styleing fo the seach bar*/
+nav li input{
+    width: 95%;
+    height: 2rem;
+}
+
+/*adding broder to magnifer icon*/
+.im.im-magnifier{
+    color:coral;
+}
+/*--------------------
+  about us styles
+--------------------*/
+
+#about{
+    background-color:#ffe6ac;
+}
+
+/*--------------------
+  our services styles
+--------------------*/
+
+.digital{
+    background-color: #ffe6ac;
+}
