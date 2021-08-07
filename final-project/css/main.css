@@ -149,6 +149,34 @@ table {
     font-family: 'Open Sans', sans-serif;
 }
 
+h2{
+    font-weight: 700;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+/*.logo{
+    position: relative;
+    right: 33.5rem;
+}*/
+
+/*button arrow*/
+a i::before {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+
 /*----------------
    header styles
 -----------------*/
@@ -164,6 +192,8 @@ header{
 
 .logo{
     align-self: start;
+    position: relative;
+    right: 33.5rem;
 }
 
 /*added to archors to remove link style*/
@@ -188,6 +218,7 @@ nav ul a:focus {
 nav li{
     padding-bottom: 1rem;
     padding-top: 1rem;
+    font-size: 1.5rem;
 }
 
 /*hids the seach label*/
@@ -196,15 +227,66 @@ nav li label{
 }
 
 /*styleing fo the seach bar*/
-nav li input{
-    width: 95%;
-    height: 2rem;
+nav li form input{
+    width: 90%;
+    /*height: 2rem;*/
+    vertical-align: middle;
+    padding: 9px;
+    margin-right: -5.5px;
 }
 
+
+
+/*search button*/
+ul li form button{
+    display: inline;
+    background-color: inherit;
+    border: 1px solid #c78c06;
+    padding: 1px;
+    vertical-align: middle;
+}
 /*adding broder to magnifer icon*/
 .im.im-magnifier{
-    color:cornflowerblue;
+    color:#c78c06;
+    padding: 5px 5px 5px 5px;
 }
+/*--------------------
+  Welcome to styles
+--------------------*/
+
+.welcome{
+   position: relative;
+}
+
+img[src$="main-banner.jpg"]{
+    max-width: 1200px;
+    width: 100%;
+}
+
+.welcome-inside{
+    position: absolute;
+    margin: 0 auto;
+    bottom: 15rem;
+    padding-left: 1rem;
+    background-color: rgba(0,0,0,0.6);
+    color:white;
+}
+
+h1{
+   font-size: 7rem;
+   font-weight: 700;
+   padding-top: 5rem;
+   padding-bottom: 5rem;
+}
+
+.connect{
+    background-color:#c78c06;
+    color:black;
+    margin-top: 3rem;
+    padding: 1.5rem;
+}
+
+
 /*--------------------
   about us styles
 --------------------*/
@@ -213,10 +295,170 @@ nav li input{
     background-color:#ffe6ac;
 }
 
+img[src$="about-us.jpg"] {
+    width: 97%;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.about-inside{
+    padding: 1rem 1rem;
+}
+
 /*--------------------
   our services styles
 --------------------*/
 
+img[src$="digital.jpg"]{
+    max-width: 1150px;
+    width: 100%;
+}
+
 .digital{
     background-color: #ffe6ac;
+    max-width: 1150px;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.digital-inside{
+    padding-left: 1rem;
+}
+
+img[src$="marketing.jpg"]{
+    max-width: 1150px;
+    width: 100%;
+}
+.marketing{
+    background-color: #ffe6ac;
+    max-width: 1150px;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.marketing-inside{
+    padding-left: 1rem; 
+}
+
+img[src$="video.jpg"]{
+    max-width: 1150px;
+    width: 100%;
+}
+
+.video{
+    background-color: #ffe6ac;
+    max-width: 1150px;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.video-inisde{
+    padding-left: 1rem;
+}
+
+img[src$="web.jpg"]{
+    max-width: 1150px;
+    width: 100%;
+}
+
+.web{
+    background-color: #ffe6ac;
+    max-width: 1150px;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.web-inside{
+    padding-left: 1rem;
+}
+
+img[src$="print.jpg"]{
+    max-width: 1150px;
+    width: 100%;
+}
+
+.print{
+    background-color: #ffe6ac;
+    max-width: 1150px;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.print-inside{
+    padding-left: 1rem;
+}
+
+.s-button{
+    background-color:#222;
+    color:white;
+    padding: 1.5rem;
+}
+
+/*--------------------
+  our vision styles
+--------------------*/
+.vision{
+    position: relative;
+ }
+ 
+ img[src$="vision.jpg"]{
+     max-width: 1200px;
+     width: 100%;
+     height: 30rem;
+     padding-top: 1rem;
+ }
+ 
+ .vision-inside{
+     position: absolute;
+     margin: 0 auto;
+     bottom: 10rem;
+     padding-left: 1rem;
+     color:white;
+ }
+ 
+ h3{
+    font-size: 4rem;
+    font-weight: 700;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+ }
+ 
+ .learn{
+     background-color: rgba(0,0,0,0.6);
+     color:white;
+     padding: 1.5rem;
+     border: 1px solid #c78c06;
+ }
+ 
+
+/*--------------------
+  our team styles
+--------------------*/
+
+.john{
+    background-color: #ffe6ac;
+    max-width: 1150px;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+img[src$="john.jpg"]{
+    max-width: 1150px;
+    width: 100%;
+}
+
+.bob{
+    background-color: #ffe6ac;
+    max-width: 1150px;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+img[src$="bob.jpg"]{
+    max-width: 11;
 }
