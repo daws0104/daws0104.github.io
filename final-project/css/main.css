@@ -151,7 +151,7 @@ table {
 
 h2{
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 6rem;
     padding-bottom: 2rem;
     padding-top: 3rem;
 }
@@ -446,6 +446,11 @@ img[src$="print.jpg"]{
     margin-bottom: 1rem;
     margin-left: 1rem;
 }
+
+.john-inside{
+    margin-left: 1rem;
+}
+
 img[src$="john.jpg"]{
     max-width: 1150px;
     width: 100%;
@@ -460,5 +465,111 @@ img[src$="john.jpg"]{
 }
 
 img[src$="bob.jpg"]{
-    max-width: 11;
+    max-width: 1150px;
+    width: 100%;
+}
+
+.bob-inside{
+    margin-left: 1rem;
+}
+
+h4{
+    font-weight: 700;
+    font-size: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+h5{
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+/*--------------------
+  our team styles
+--------------------*/
+
+.block{
+    border: 1px #222 solid;
+    width: 99%;
+    max-width: 1200px;
+    height: 2rem;
+    display: block
+}
+
+.form input{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+/*styleing for textarea*/
+#message {
+    display: block;
+    max-width: 1200px;
+    margin-top: 1em;
+    min-width: 99%;
+    height: 15em;
+}
+
+button{
+    background-color: #222;
+    color:#c78c06;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+/*--------------------
+  hours of operation styles
+--------------------*/
+
+table th:nth-child(n),
+table td:nth-child(n) {
+    border: 1px solid black;
+    font-size: 1.5rem;
+    width: 1200px;
+
+}
+
+/*table title*/
+table th{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #ffe6ac;
+}
+
+/*table items*/
+table td:nth-child(n) {
+    padding-right: 5rem;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/*larger frist colum*/
+table td:nth-child(odd){
+    padding-right: 15rem;
+}
+
+/*--------------------
+     location styles
+--------------------*/
+iframe{
+    height: 700px;
+    width: 1150px;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}
+/*--------------------
+     footer styles
+--------------------*/
+footer p{
+    color:#c78c06;
+    background-color: #222;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.copy{
+    padding-top: 1rem;
 }
