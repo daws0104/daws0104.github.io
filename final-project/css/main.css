@@ -137,7 +137,7 @@ table {
 /*End of CSS reset*/
 
 /*--------------
-    all contain styles
+    all page styles
 ----------------*/
 
 /*container for all page content*/
@@ -165,11 +165,6 @@ p{
     font-size: 1.5rem;
 }
 
-/*.logo{
-    position: relative;
-    right: 33.5rem;
-}*/
-
 /*button arrow*/
 a i::before {
     padding-left: 1rem;
@@ -185,22 +180,20 @@ header{
     background-color:#222;
 }
 
-/*header div*/
-.site{
-    padding-left: 1rem;
-}
-
+/*positioning for three star logo*/
 .logo{
     align-self: start;
-    position: relative;
-    right: 33.5rem;
 }
 
 /*added to archors to remove link style*/
-a {
+nav ul a {
     color: #c78c06;
     text-decoration: none;
+    display:block;
+    padding: 1rem;
 }
+
+/*added biger hover area*/
 
 /*for styleing whole navagatshion list*/
 nav ul {
@@ -208,6 +201,7 @@ nav ul {
     color: #c78c06;
 }
 
+/*style for hover links*/
 nav ul a:hover,
 nav ul a:focus {
     background-color: #c78c06;
@@ -216,8 +210,6 @@ nav ul a:focus {
 
 /*for styleing indiveal list items*/
 nav li{
-    padding-bottom: 1rem;
-    padding-top: 1rem;
     font-size: 1.5rem;
 }
 
@@ -231,7 +223,7 @@ nav li form input{
     width: 90%;
     /*height: 2rem;*/
     vertical-align: middle;
-    padding: 9px;
+    padding: 10px;
     margin-right: -5.5px;
 }
 
@@ -243,6 +235,7 @@ ul li form button{
     background-color: inherit;
     border: 1px solid #c78c06;
     padding: 1px;
+    margin-bottom: 1rem;
     vertical-align: middle;
 }
 /*adding broder to magnifer icon*/
@@ -255,7 +248,10 @@ ul li form button{
 --------------------*/
 
 .welcome{
-   position: relative;
+   background: white url(../images/main-banner.jpg) no-repeat center;
+   background-size: cover; 
+   padding-bottom: 5rem;
+   padding-top:5rem;
 }
 
 img[src$="main-banner.jpg"]{
@@ -264,11 +260,11 @@ img[src$="main-banner.jpg"]{
 }
 
 .welcome-inside{
-    position: absolute;
     margin: 0 auto;
-    bottom: 15rem;
     padding-left: 1rem;
+    padding-bottom: 8rem;
     background-color: rgba(0,0,0,0.6);
+    background-size: 90px;
     color:white;
 }
 
@@ -282,8 +278,12 @@ h1{
 .connect{
     background-color:#c78c06;
     color:black;
+    font-size: 1.5rem;
     margin-top: 3rem;
-    padding: 1.5rem;
+    padding: 3rem;
+    position: relative;
+    bottom: -4rem;
+    text-decoration: none;
 }
 
 
@@ -316,13 +316,14 @@ img[src$="digital.jpg"]{
 .digital{
     background-color: #ffe6ac;
     max-width: 1150px;
-    padding-bottom: 1rem;
+    padding-bottom: 8rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
 }
 
 .digital-inside{
     padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 img[src$="marketing.jpg"]{
@@ -332,13 +333,14 @@ img[src$="marketing.jpg"]{
 .marketing{
     background-color: #ffe6ac;
     max-width: 1150px;
-    padding-bottom: 1rem;
+    padding-bottom: 8rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
 }
 
 .marketing-inside{
     padding-left: 1rem; 
+    padding-right: 1rem;
 }
 
 img[src$="video.jpg"]{
@@ -349,13 +351,14 @@ img[src$="video.jpg"]{
 .video{
     background-color: #ffe6ac;
     max-width: 1150px;
-    padding-bottom: 1rem;
+    padding-bottom: 8rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
 }
 
 .video-inisde{
     padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 img[src$="web.jpg"]{
@@ -366,13 +369,14 @@ img[src$="web.jpg"]{
 .web{
     background-color: #ffe6ac;
     max-width: 1150px;
-    padding-bottom: 1rem;
+    padding-bottom: 8rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
 }
 
 .web-inside{
     padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 img[src$="print.jpg"]{
@@ -383,19 +387,24 @@ img[src$="print.jpg"]{
 .print{
     background-color: #ffe6ac;
     max-width: 1150px;
-    padding-bottom: 1rem;
+    padding-bottom: 8rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
 }
 
 .print-inside{
     padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .s-button{
     background-color:#222;
     color:white;
-    padding: 1.5rem;
+    padding: 3rem;
+    font-size: 1.5rem;
+    position: relative;
+    top: 4rem;
+    text-decoration: none;
 }
 
 /*--------------------
@@ -430,8 +439,12 @@ img[src$="print.jpg"]{
  .learn{
      background-color: rgba(0,0,0,0.6);
      color:white;
-     padding: 1.5rem;
+     padding: 3rem;
+     font-size: 1.5rem;
      border: 1px solid #c78c06;
+     position: relative;
+     bottom: -4rem;
+     text-decoration: none;
  }
  
 
@@ -439,39 +452,47 @@ img[src$="print.jpg"]{
   our team styles
 --------------------*/
 
+#our-team{
+    min-width: 760px;
+
+}
+
 .john{
     background-color: #ffe6ac;
     max-width: 1150px;
     padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
 }
 
-.john-inside{
-    margin-left: 1rem;
-}
 
 img[src$="john.jpg"]{
-    max-width: 1150px;
-    width: 100%;
+    width: 745px;
+    padding-left: 1rem;
+    position: relative;
+    top: 1rem;
 }
 
 .bob{
     background-color: #ffe6ac;
     max-width: 1150px;
     padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
 }
 
 img[src$="bob.jpg"]{
-    max-width: 1150px;
-    width: 100%;
+    width: 745px;
+    padding-left: 1rem;
+    position: relative;
+    top: 1rem;
 }
 
-.bob-inside{
-    margin-left: 1rem;
-}
+
 
 h4{
     font-weight: 700;
@@ -484,6 +505,7 @@ h5{
     font-weight: 700;
     font-size: 1.5rem;
     padding-bottom: 1rem;
+    border-top: 2px solid #c78c06;
 }
 
 /*--------------------
@@ -517,6 +539,7 @@ button{
     color:#c78c06;
     font-size: 2rem;
     margin-top: 1rem;
+    border:none;
 }
 
 /*--------------------
@@ -554,6 +577,8 @@ table td:nth-child(odd){
 /*--------------------
      location styles
 --------------------*/
+
+/*map styles*/
 iframe{
     height: 700px;
     width: 1150px;
@@ -572,4 +597,309 @@ footer p{
 
 .copy{
     padding-top: 1rem;
+}
+
+/*--------------------
+    desktop styles
+--------------------*/
+@media screen and (min-width: 760px){
+/*--------------------
+    all page styles
+--------------------*/
+    h2{
+        font-weight: 700;
+        font-size: 5rem;
+        padding-bottom: 2rem;
+        padding-top: 3rem;
+    }
+    
+    h3{
+        font-weight: 700;
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+    
+    p{
+        font-size: 1rem;
+    }
+    
+    
+    /*button arrow*/
+    a i::before {
+        padding-left: 1rem;
+        font-size: 1.5rem;
+    }
+    
+/*--------------------
+    header styles
+--------------------*/
+
+header{
+    padding-bottom: 1rem;
+}
+
+
+nav li {
+    display: inline-block;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+a{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.home {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/*positioning for three star logo*/
+.logo{
+    display: inline;
+}
+
+/*styleing fo the seach bar*/
+nav li form input{
+    display: inline;
+    width: 70%;
+    margin-right: -5.5px;
+}
+
+/*--------------------
+  Welcome to styles
+--------------------*/
+ /*welcome class*/
+ h1{
+    font-size: 6rem;
+    line-height: 1.5;
+    font-weight: 700;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-right: 1rem;
+ }
+ 
+.welcome{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+
+ .connect{
+     background-color:#c78c06;
+     color:black;
+     font-size: 1.5rem;
+     margin-top: 3rem;
+     padding: 3rem;
+     position: relative;
+     bottom: -4rem;
+ }
+ /*--------------------
+  about us styles
+--------------------*/
+
+#about{
+    background-color:#ffe6ac;
+}
+
+#about>div{
+    display: flex;
+}
+
+img[src$="about-us.jpg"] {
+    width: 50%;
+}
+
+.about-inside{
+    padding: 1rem 1rem;
+    width: 50%;
+}
+
+ /*--------------------
+   our services styles
+--------------------*/
+
+#services{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto(3, 1fr);
+    max-width: 1000px;
+    margin-left: 6rem;
+}
+
+.os{
+    grid-column: span 6;
+}
+
+.digital{
+    grid-column: span 3;
+    margin-left: 0rem;
+}
+
+.marketing {
+    grid-column: span 3;
+}
+
+img[scr="marketing"]{
+    height: 70rem;
+}
+
+.video {
+    grid-column: span 2;
+    margin-left: 0rem;
+}
+
+.web {
+    grid-column: span 2;
+
+}
+
+.print{
+    grid-column: span 2;
+}
+
+/*nth child achors to select speific ones*/
+/*cheack bottom padding on buttons vs. bottom padding on div*/
+
+
+.s-button div:nth-child(4){
+    width: 100%;
+}
+
+ /*--------------------
+    our team styles
+-------------------*/
+
+#our-team{
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.team-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1150px;
+    padding-bottom: 1rem;
+}
+
+#team{
+    flex-basis: 100%;
+    order: 1;
+    
+}
+
+img[src$="john.jpg"]{
+    position:inherit;
+    padding-left: 1;
+    max-width: 500px;
+    flex-basis: 50%;
+    order: 2;
+}
+
+
+.john{
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 0;
+    margin-left: 0;
+    max-width: 468px;
+    flex-basis: 50%;
+    order: 3;
+    flex: shrink 4;
+}
+
+.bob{
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 0;
+    margin-left: 1;
+    max-width: 468px;
+    flex-basis: 50%;
+    order: 4;
+}
+
+img[src$="bob.jpg"]{
+    padding-left: 0;
+    position:inherit;
+    max-width: 500px;
+    flex-basis: 50%;
+    order: 5;
+}
+
+ /*--------------------
+    contact us styles
+---------------------*/
+
+#bottom-layout{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.bottom-inside{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1150px;
+    padding-bottom: 1rem;
+}
+
+#contact{
+    flex-basis: 100%;
+    order: 1;
+}
+
+.thanks.html{
+    max-height: 500px;
+    height: 500px;
+}
+
+
+
+
+.contact-form{
+    max-height: 600px;
+    padding-left: 1rem;
+    flex-basis: 50%;
+    order: 2;
+}
+
+.location{
+    max-height: 50px;
+    max-width: 50px;
+    height: 50px;
+    width: 50px;
+    margin-right: 1rem;
+    flex-basis: 50%;
+    order: 3;
+}
+
+.hours{
+    padding-left: 2rem;
+    margin-top: 7rem;
+    flex-basis: 100%;
+    order: 4;
+}
+
+iframe{
+    height: 500px;
+    width: 550px;
+}
+
+
+
+
 }
