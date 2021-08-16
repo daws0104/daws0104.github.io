@@ -141,8 +141,6 @@ table {
 ----------------*/
 
 /*container for all page content*/
-
-
 .container{
     max-width: 1200px;
     margin:0 auto;
@@ -159,6 +157,9 @@ h2{
 h3{
     font-weight: 700;
     font-size: 2.5rem;
+    font-size: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 p{
@@ -178,11 +179,14 @@ a i::before {
 
 header{
     background-color:#222;
+    padding: 1rem;
 }
 
 /*positioning for three star logo*/
 .logo{
-    align-self: start;
+    align-self:initial;
+    margin-right: 38rem;
+
 }
 
 /*added to archors to remove link style*/
@@ -194,6 +198,10 @@ nav ul a {
 }
 
 /*added biger hover area*/
+.home{
+    padding-top: 20rem;
+    margin-top: -6.5rem;
+}
 
 /*for styleing whole navagatshion list*/
 nav ul {
@@ -252,6 +260,10 @@ ul li form button{
    background-size: cover; 
    padding-bottom: 5rem;
    padding-top:5rem;
+}
+
+.ov{
+    font-size: ;
 }
 
 img[src$="main-banner.jpg"]{
@@ -424,17 +436,16 @@ img[src$="print.jpg"]{
  .vision-inside{
      position: absolute;
      margin: 0 auto;
-     bottom: 10rem;
+     bottom: 9rem;
      padding-left: 1rem;
      color:white;
  }
  
- h3{
-    font-size: 4rem;
-    font-weight: 700;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+ .ov{
+     font-size: 3.5rem;
+     padding-bottom: 2rem;
  }
+
  
  .learn{
      background-color: rgba(0,0,0,0.6);
@@ -509,7 +520,7 @@ h5{
 }
 
 /*--------------------
-  our team styles
+     form styles
 --------------------*/
 
 .block{
@@ -520,10 +531,16 @@ h5{
     display: block
 }
 
-.form input{
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+#fullname{
+    margin-bottom: .5rem;
+    margin-top: .5rem;
 }
+
+#youremail{
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
 
 /*styleing for textarea*/
 #message {
@@ -615,7 +632,7 @@ footer p{
     
     h3{
         font-weight: 700;
-        font-size: 2.5rem;
+        font-size: 1.9rem;
         padding-bottom: 2rem;
         padding-top: 2rem;
     }
@@ -636,7 +653,8 @@ footer p{
 --------------------*/
 
 header{
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
 }
 
 
@@ -647,23 +665,26 @@ nav li {
 }
 
 a{
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
 
 .home {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-top: 0;
 }
 
 /*positioning for three star logo*/
 .logo{
     display: inline;
+    margin-right: 0;
+    padding-right: 4rem;
 }
 
 /*styleing fo the seach bar*/
@@ -737,6 +758,7 @@ img[src$="about-us.jpg"] {
 
 .os{
     grid-column: span 6;
+    grid-row: auto;
 }
 
 .digital{
@@ -755,6 +777,7 @@ img[scr="marketing"]{
 .video {
     grid-column: span 2;
     margin-left: 0rem;
+    margin-top: .7rem;
 }
 
 .web {
@@ -768,10 +791,54 @@ img[scr="marketing"]{
 
 /*nth child achors to select speific ones*/
 /*cheack bottom padding on buttons vs. bottom padding on div*/
+#digital-button{
+    padding-right: 9rem;
+    padding-left: 9rem;
+}
 
+img[src$="digital.jpg"]{
+    height: 20rem;
+}
 
-.s-button div:nth-child(4){
-    width: 100%;
+#marketing-button{
+    padding-right: 7.2rem;
+    padding-left: 7.2rem;
+    top: 4rem;
+}
+
+img[src$="video.jpg"]{
+    height: 13.4rem;
+}
+
+#video-button{
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+#web-button{
+    padding-right: 3.9rem;
+    padding-left: 3.9rem;
+}
+
+#print-button{
+    padding-right: 3.8rem;
+    padding-left: 3.8rem;
+}
+
+ /*--------------------
+   our vision styles
+--------------------*/
+img[src$="vision.jpg"]{
+    max-width: 1200px;
+    width: 1200px;
+    min-height: 400px;
+    height: 400px;
+}
+
+.vision-inside{
+    padding-bottom: 1rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
  /*--------------------
@@ -802,7 +869,7 @@ img[scr="marketing"]{
 
 img[src$="john.jpg"]{
     position:inherit;
-    padding-left: 1;
+    padding-left: 1rem;
     max-width: 500px;
     flex-basis: 50%;
     order: 2;
@@ -812,26 +879,25 @@ img[src$="john.jpg"]{
 .john{
     padding-right: 1rem;
     padding-left: 1rem;
-    margin-bottom: 0;
-    margin-left: 0;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
     max-width: 468px;
     flex-basis: 50%;
     order: 3;
-    flex: shrink 4;
 }
 
 .bob{
     padding-right: 1rem;
     padding-left: 1rem;
-    margin-bottom: 0;
-    margin-left: 1;
+    margin-bottom: 0rem;
+    margin-left: 1rem;
     max-width: 468px;
     flex-basis: 50%;
     order: 4;
 }
 
 img[src$="bob.jpg"]{
-    padding-left: 0;
+    padding-left: 0rem;
     position:inherit;
     max-width: 500px;
     flex-basis: 50%;
